@@ -1,17 +1,77 @@
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-# https://maven.apache.org/wrapper/#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
+#################################################
+# GENERAL
+#################################################
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+.idea/
+.vscode/
+*.iml
 
-# Eclipse m2e generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
+#################################################
+# SPRING BOOT (Maven)
+#################################################
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+backend/logs/
+backend/*.log
+
+# Spring Boot DevTools
+backend/.springBeans
+
+#################################################
+# SPRING BOOT (Gradle) - if using Gradle
+#################################################
+backend/build/
+backend/.gradle/
+
+#################################################
+# ANGULAR / NODE
+#################################################
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.cache/
+frontend/coverage/
+
+# Angular environment files (optional if sensitive)
+frontend/src/environments/*.local.ts
+
+#################################################
+# NODE
+#################################################
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/package-lock.json
+
+#################################################
+# ENV FILES (Important)
+#################################################
+backend/.env
+frontend/.env
+*.env
+*.env.local
+
+#################################################
+# TEST / COVERAGE
+#################################################
+coverage/
+*.lcov
+
+#################################################
+# IDE SPECIFIC (Extra Safety)
+#################################################
+*.ipr
+*.iws
+*.class
+
+#################################################
+# OS FILES
+#################################################
+Desktop.ini
